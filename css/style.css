@@ -1,0 +1,83 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+/* COMMON */
+.underline {
+    text-decoration: 1px dotted;
+}
+
+/* Product Card */
+
+.product-card {
+    padding: 0.5rem;
+    background-color: bisque;
+}
+
+.pc-image {
+    height: 100%;
+}
+
+.pc-image img {
+    object-fit: cover;
+    height: 100%;
+}
+
+.pc-col {
+    padding: 0.5rem;
+}
+
+/* Rating */
+
+.pc-rating .circle {
+    width: 16px;
+    height: 16px;
+    background-color: aqua;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 1466px) {
+    .product-card {
+        display: flex;
+    }
+
+    /* IMAGE */
+    .pc-image-col{
+        width: 30%;
+    }
+
+    /* CONTENT */
+    .pc-main-content {
+        width: 70%;
+        padding-left: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        border: 1px solid red;
+    }
+
+    /* head */
+    .pc-head-col {
+        width: 100%;
+        border: 1px solid red;
+        height: 10%;
+    }
+
+    /* Rating */
+
+    .pc-col {
+        border: 1px solid red;
+        height: 80%;
+        width: calc(100% / 3);
+    }
+}
